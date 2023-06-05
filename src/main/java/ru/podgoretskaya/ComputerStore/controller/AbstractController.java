@@ -1,6 +1,7 @@
 package ru.podgoretskaya.ComputerStore.controller;
 
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -18,6 +19,7 @@ import java.util.List;
 
 @RequiredArgsConstructor
 @Slf4j
+@Tag(name = "Магазин", description = "Методы разделены по типу товара")
 public class AbstractController<T extends AbstractEntity, D extends AbstractDTO> {
     private final Service<T, D> service;
 
