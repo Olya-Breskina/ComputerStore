@@ -19,7 +19,7 @@ import java.util.List;
 
 @RequiredArgsConstructor
 @Slf4j
-@Tag(name = "Магазин", description = "Методы разделены по типу товара")
+//@Tag(name = "Магазин", description = "Методы разделены по типу товара")
 public class AbstractController<T extends AbstractEntity, D extends AbstractDTO> {
     private final Service<T, D> service;
 
